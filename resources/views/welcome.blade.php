@@ -37,18 +37,14 @@
                                     class="btn btn-info rounded-pill ml-1 underline">{{ Auth::user()->name }}</a>
                             @else
                                 <a href="{{ route('login') }}"
-                                    class="btn btn-primary rounded-pill ml-1 underline">เข้าสู่ระบบ</a>
+                                    class="btn btn-primary rounded-pill ml-1 underline"> <b>เข้าสู่ระบบ</b> </a>
 
                                 @if (Route::has('register'))
                                     <a href="{{ route('register') }}"
-                                        class="btn btn-secondary rounded-pill underline">สมัครสมาชิก</a>
+                                        class="btn btn-secondary rounded-pill underline"> <b>สมัครสมาชิก</b> </a>
                                 @endif
                             @endauth
                         @endif
-
-
-                        {{-- <a class="btn btn-secondary rounded-pill ml-1" href="#" role="button">สมัครสมาชิก</a>
-                        <a class="btn btn-primary rounded-pill" href="#" role="button">เข้าสู่ระบบ</a> --}}
                     </div>
                 </div>
             </div>
